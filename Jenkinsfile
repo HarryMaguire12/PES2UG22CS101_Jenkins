@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Compiling C++ file...'
-                    sh 'g++ hello.cpp -o PES2UG22CS103-1'  // Compile the C++ file
+                    sh 'g++ ./main/hello.cpp -o PES2UG22CS101-1'  // Compile the C++ file
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running the compiled file...'
-                    sh './PES2UG22CS103-1'  // Execute the compiled program
+                    sh './PES2UG22CS101-1'  // Execute the compiled program
                 }
             }
         }
